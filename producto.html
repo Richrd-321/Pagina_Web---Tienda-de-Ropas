@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    
+
 </head>
 
 <body>
@@ -22,14 +23,38 @@
 
     </header>
 
-    <!--    PARTE DE NAVEGACION     --> 
+    <!--    PARTE DE NAVEGACION     -->
     <nav class="navegacion">
         <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
         <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
     </nav>
     <!--    PARTE PRINCIPAL     -->
     <main class="contenedor">
-        <h1>Producto</h1>
+        <h1>REACT JS</h1>
+
+        <div class="camisa">
+            <img class="camisa__imagen" src="img/3.jpg" alt="Imagen del producto">
+
+            <div class="camisa__contenido">
+                <p>Phasellus sed leo et turpis gravida scelerisque quis a est. Praesent nec quam et quam consectetur luctus. Phasellus sed leo et turpis gravida scelerisque quis a est. Praesent nec quam et quam consectetur luctus.</p>
+
+                <form class="formulario">
+                    <!--Form Selecionar talla-->
+                    <select class="formulario__campo">
+                        <option disabled selected>Seleccionar Talla</option>
+                        <option class="opcion">Chica</option>
+                        <option class="opcion">Mediana</option>
+                        <option class="opcion">Grande</option>
+                    </select>
+
+                    <!--Form Selecionar cantidad-->
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+
+                    <!--Form Boton-->
+                    <input class="formulario__submit" type="submit" value="Agregar al Carrito">
+                </form>
+            </div>
+        </div>
 
     </main>
     <!--    PARTE FOOTER    -->
